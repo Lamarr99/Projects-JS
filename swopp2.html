@@ -1,0 +1,394 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swopp</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+
+
+.btn-grad {background-image: linear-gradient(to right, #6a3093 0%, #a044ff  51%, #6a3093  100%)}
+.btn-grad {
+   margin-right: 15px;
+   padding: 10px 25px;
+   text-align: center;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   border: 0px;}
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+a{
+ text-decoration: none;
+  color: black;
+}
+ .masonry {
+  column-count: 2;
+  column-gap: 16px;
+  width: 100%;
+
+}
+
+.card-header {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+#freq{
+font-weight: 700;
+font-size: 50px;
+line-height: 60px;
+text-align: center;
+
+}
+footer{
+
+text-align: center;
+margin-bottom: 5%;
+color: lightslategray;
+}
+p{
+  font-size: 16px;
+  font-weight: 400;
+}
+.description{
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+}
+
+p{
+    font-weight: 400;
+}
+#front{
+  font-size: 50px;
+  font-weight: 700;
+}
+#transact{
+  display: grid;
+}
+#head{
+  font-size: 58px;
+  font-weight: 700;
+}
+#ppp{
+    margin: 0 100px 0 150px ;
+
+    font-size: 14px;
+    font-weight: 400;
+line-height: 22px;
+}
+#para{
+  font-size: 20;
+  font-weight: 400;
+  line-height: 23px;
+  font-family: 'roboto' sans-serif;
+}
+#transact{
+    /* flex-direction: row;
+    row-gap: 5%; */
+  
+    /* margin: auto 50px auto 0px ; */
+    width: 100%;
+    line-height: 25px;
+    font-size: 12px;
+    
+
+}
+#trans{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+#space{
+margin: 3rem 0;
+
+}
+
+#market{margin: 10rem 0px;
+}
+#Billion{
+  font-weight: 600;
+  font-size: 80px;
+}
+.center{
+  text-align: center;
+  margin: 12em 0;
+}
+.img {
+  
+  /* height: 100%; */
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+.item-1 {
+  grid-row: 1/1;
+
+}
+
+.item-2 {
+  grid-row: 2/2;
+
+}
+.item-3{
+  grid-row: 3/4; 
+}
+
+.item-4 {
+  grid-row: 1/2;
+}
+
+.item-5 {
+  grid-row: 2/3;
+}
+
+.item-6 {
+  grid-row: 3/4;
+}
+
+.item-7 {
+  grid-row: 5/6;
+}
+
+
+
+
+</style>
+
+</head>
+<body class="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img style="margin: 0 30px;" id="home" src="https://lh3.googleusercontent.com/VuZS-3Va0cCVoiNRvPdst_avcrxDud1nASDlGwzZhjrEzlvckD8glBN_wnoxp_sHPpBlWp_Fji77w9yRS3Lmd8y2onMJPrDpgX_CzBJanScE5YDwszl3x-yHbObJ7H7LGPDrIcM0VqC9GY1tf5X3nmVgwyYj_XC4rV5J82L4RVb9-3gWo6GcNXryWnzrdi_IAPlbUKzS14o-Gw9zlbR3YMbPgk38SH-BhKeBtqkxfXH4BnjdvS9l1EoIrNJSL9UwfIABl8zjaUEvlPoJr3XYyGZ_DHa_cdj2m5yjBf0XiZwCIFj0l7prLV_FUGrs1AWrl5iOaDZyeUGAMbM83GS-81ZyTbSZZM__Bx-rHL1vF86gc6C7Qk6qZNzE7Vp7XE-ypAm4QL0ScECuoEu5_ZqOfrcaaTZOcGMGxE0OhSNJivL_-5Sr1ALrOky_ksuwyMpPutS8T7-IfuD8f-cerlNGSsXf0DDk_ODxEEtpFmBSiklF6IJDc_GaxF5ww0SOpyesKikm8Pb5CEIhzywElvOizRSzoxJYtFDB0XO1CHUjS1cCsezl1odWuzvCjUs1ZRM7KYOkbEcM-l2C05oTWjxtUKOSv_bD0zLh2B_34vlVgeZlIe2CA_t3Sn_zBOd-4nGxsd06wQmfChtm-NhrZlcVDz6Q55-CG6gs4qO2s-4UghLWgh3wYvCVnPdGiaVgz8Oc8pfEXbz3ok0Ro_aUxSCNmtw=s48-no?authuser=0" alt="logo"><strong>Swopp</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div id="nav-list" class="collapse navbar-collapse navbar navbar-expand-sm bg-light justify-content-end" id="navbarSupportedContent">
+         
+    
+            <a style="color: black;" class="nav-link" href=""><strong> About Us</strong></a>
+            <a class="nav-link" href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" alt=""></a>
+            <a class="nav-link" href=""><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt=""></a>
+         
+        </div>
+      </nav>
+
+      <div id="bgpicture" class="bg-image p-5  mb-3 "
+      style="background-image:url('https://lh3.googleusercontent.com/7liQU0DSTMiBFLMwoW7xwhMZ4MdZzRiE47gGKczwq-yt20QpAuc8AofHucyaeMg0Pshpj2LlxfFxxt_V3xuKKBbkVHaIrs9sXHqu5FyRIuAd1ZnaRQN5uOVnZ3ioU7Jxvbi2XgGvd0Vm-Vbo9nk2JvXLRkX7yhpr3FniOK84QZSdFIcknTq-hh0U6A0gCxMlhjVzKfM-i35TLqlzKuQhJlQO1_6nAUwc_j_KyL8fF6-4J0YgyJhdkyMxzcmuoPgCfZ26UH1bxCUI6z4HgK6jkmSgtuVDkxiew0ErikvO_LluLF5i8mJbxFYH3QxgQJj6DPQK3aSM_6BTna9Cec3jwicQce5EVJ3YOjnGuRei3Wnsoq0GZmQrHBdmUNIswoD_JfRBu9KD-emBkJHvqxmzwy67v2UmZXTtXcaYGEZwQ73XxnYS4QoLZxyhliI4UyBgyT7u4657IrVoog0dfOuXPRsOWRIviBcXmKYjy7GyW7wIB-RwCyi66ECQEoXosssB8EJhpMaN82PhB6E6gG4LruZLIs8Ljh01whT25gvPmTF0XN1sEpYE_g22S9N0T2uS0ZhJAeP4FR7mWpUNFuQhJCHXEuozEx5OAH0h3UDD5GYqJoyleAXLQNLmMs3dEsC7vgzNlpMOX2CrIjOAukWEEHRNpZz67VHvVYaicAVU6XcZ8eWhbTScpbHt5Mb0h2A3NY9IAdWyfzb8Fs2s99dw0ek=w1214-h568-no?authuser=0') ;">
+        
+                <h1 id="head"><b>Swopp is bringing<br> Africa together, one<br>Transaction at a time</b></h1>
+                <p id="intro">We know how hard you work, so we're making it easier <br>
+                     for you to send money to family and friends. We’ll get <br>
+                      your money to those who need it conveniently, quickly, <br>
+                       securely, and at the best exchange rates – making sure <br>
+                        your hard earned money goes further.</p>
+                      
+        </div>
+
+<div class="container">
+  <div id="" class="center">
+  <h2 id="Billion">Over $1 Billion</h2>
+  <p id="para">Transactions for our users in 2021</p>
+<img class="img-fluid" src="https://lh3.googleusercontent.com/JxXtflqNCOfNWcvRFKfxG6haHEA2lC8JSXU4CcOprx4wXW033csmgbwFzw5jwnnr8dn0MMMm-XFsXOFR-xGq5jUy3vi4QBLsm13FeCE7MAYktRRvqDGCmzEBI6uTShmt8Q6mLPTSv3-c-FGRVV0zD6UF1aLVxoH_JkYsOfl2KnythSal1e8WRzPcJ5NX_FHmarpuYdWY9edycO_5c5i-5UInuLCtssZTppUYn2RIRP0Ir8bzFsPcdYNR85c5xQfKT53ckGuLDijQBVS4ThOxi9pLV_wHOu6GKOPHzMo9gxaiCO5qFk9XsjXI9VVYiXFRJEqvvH8m1hXW4lMlgv0_xyVK1LTsblQftcoda_74w1bHtpVguynUjUdmPpM5msTV3qHNI8MxiengPGCJPMQ6qtov4RDa8Jjq86RLb5CW_OtOEm8sHlwc_4enLKAeYuU8e34XkypKoP3DWTOMnY4JgbeWcKgbcjcHmyMCt1oehT4jGfaCIq1XE3gLsc63L0AYrBayrJsXguKEGC6xiQmFZayjz0SdTgXsjspE8LmOLEkifZfNJBClV3vMo9n2HZELNDwUeJEDKvo17AKm6GV9QDQN8L9HUqmc9cVLD0q2NkuPzVoNMNtskbqQYScpiOv387TxeqITkyW_NL80nAMUtgGfLHPzPB254M2V3AFAShqIK_jrs3-obS9o6D2GisdsME52DgyTFj2RV3bOmNujcNo=w616-h104-no?authuser=0" alt="Clients">
+
+</div>
+<div id="" class="d-flex flex-row bd-highlight mb-3">
+<div class="p-2 bd-highlight">
+  <img class="img-fluid pull-left mr-2" src="https://lh3.googleusercontent.com/pw/AM-JKLW-xZieaojiNpNuhlWs8RSoJ1m1GrjftcniTomdNsltqp5m-FYycCs9lbSUdwXrltWn3BhtYMa1d4O-5DwypATArMIFfgb4aHsaRWDnl7HzyeN5eN-rkY2CXNntVqGfkef4CHsd9Gr2znHur1hEMPgT88WTGQWftDEQ9HGFjHDROzmI87w2OQQDN0_Uoq6jUvdTZSh84qGRqsVq3tT9d_FNxuOGMplByGYBF-BS0dzXTTkptNbq1KzijuCoyGLKV0uwIUHwByE9UGT7lCNiDYrR4TsUCmjsPIUdrdRm1fqykB4mw8pkbfFssOr75Tnfy44k8mmfElGz0nRsh6nQ2z6PnHZwmGn6MU0CLc1-IlQL62CFd_bIAmmvJTnzP5938PkrkDCpj8XojSFeeH1I28pgKpFC55u6NDprlJiuMnunwOtNuuFLnN_hgSSys3iBYOa-nbJfIO_K4YV3-j4Yd-KlXhTj7_LIXZFfff5peSBoFrDVVGMdCCnhNgYo51ZhNyLzNpcAymCWOqlJ6ogZ1jTOSijMqquYAprpdryLDkZs2lv1ZRV1DFgbXOD9LpcoP532ax5k7sBuN5CSgM5paPONvlWTV9vmQwthmvMX8dAbNyfoAwUu7DsvLis4Uy9r7ZM-z0QAIULXw2mdtzF4dCEz-8fGxzq2bAxycWpO9paOK0FNxCWakSDlSPBcd6OX-Zl_u3V0IKVDQgX4iCMg85HaZj3ILA-41NC23RT98AqM5A=w469-h568-no?authuser=0&authuser=0" alt="Features">
+
+</div>
+<div id="transact" class="justify-content-center" style="margin: 40px auto; padding:5px 30px ; ">
+  <h2 id="trans"><span style="color: deeppink;">Transact</span> Across <br> Africa & Beyond</h2>
+  <p style="font-weight: 400;font-size: 18px;line-height: 27px;">Send and receive money across Africa the fast and <br> easy way. Enjoy free transfers and the lowest <br> cross-border rates.</p><br>
+
+<div class="row">
+  <div class="col-sm">
+    <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24.2381" cy="23.8065" r="23.7714" fill="url(#paint0_linear_5_92)"/>
+      <g clip-path="url(#clip0_5_92)">
+      <path d="M19.2856 34.7019C20.3796 34.7019 21.2665 33.815 21.2665 32.7209C21.2665 31.6269 20.3796 30.74 19.2856 30.74C18.1915 30.74 17.3046 31.6269 17.3046 32.7209C17.3046 33.815 18.1915 34.7019 19.2856 34.7019Z" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M31.1713 34.7019C32.2654 34.7019 33.1523 33.815 33.1523 32.7209C33.1523 31.6269 32.2654 30.74 31.1713 30.74C30.0773 30.74 29.1904 31.6269 29.1904 32.7209C29.1904 33.815 30.0773 34.7019 31.1713 34.7019Z" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M33.388 21.6374L32.1618 27.7684H18.2952L16.3142 12.9113H13.3428" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.9748 17.8639H25.2284" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30.1808 22.8163C32.916 22.8163 35.1332 20.599 35.1332 17.8639C35.1332 15.1288 32.916 12.9115 30.1808 12.9115C27.4457 12.9115 25.2285 15.1288 25.2285 17.8639C25.2285 20.599 27.4457 22.8163 30.1808 22.8163Z" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30.1808 15.8829V19.8448" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M28.1999 17.8639H32.1618" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+      <linearGradient id="paint0_linear_5_92" x1="28.2792" y1="-8.98171" x2="28.2793" y2="61.9227" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EA459E"/>
+      <stop offset="1" stop-color="#C408F3"/>
+      </linearGradient>
+      <clipPath id="clip0_5_92">
+      <rect width="23.7714" height="23.7714" fill="white" transform="translate(12.3524 11.9208)"/>
+      </clipPath>
+      </defs>
+      </svg>
+      <h1 style="font-size: 20px; font-weight: 700; line-height: 24px;">P2P Payments</h1>
+      <p style="font-weight: 400;font-size: 14px;line-height: 21px;">The point of a landing page <br>
+      is to make the case for 
+      your product.</p>
+    
+      
+</div>
+<div class="col-sm">
+  <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24.619" cy="23.8065" r="23.7714" fill="url(#paint0_linear_5_107)"/>
+    <g clip-path="url(#clip0_5_107)">
+    <path d="M17.1055 31.3202L21.6479 26.7778" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15.705 34.7017C16.799 34.7017 17.6859 33.8147 17.6859 32.7207C17.6859 31.6266 16.799 30.7397 15.705 30.7397C14.6109 30.7397 13.724 31.6266 13.724 32.7207C13.724 33.8147 14.6109 34.7017 15.705 34.7017Z" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M34.524 32.7208C34.524 22.3277 26.098 13.9017 15.705 13.9017" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15.705 17.8636V19.8446" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26.2108 22.2148L24.8093 23.6164" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30.5621 32.7207H28.5811" stroke="white" stroke-width="1.98095" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+    <linearGradient id="paint0_linear_5_107" x1="28.6602" y1="-8.98171" x2="28.6602" y2="61.9227" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#EA459E"/>
+    <stop offset="1" stop-color="#C408F3"/>
+    </linearGradient>
+    <clipPath id="clip0_5_107">
+    <rect width="23.7714" height="23.7714" fill="white" transform="translate(12.7334 11.9208)"/>
+    </clipPath>
+    </defs>
+    </svg>
+
+    <h1 style="font-size: 20px; font-weight: 700; line-height: 24px;">Swift Transactions</h1>
+    <p style="font-weight: 400;font-size: 14px;line-height: 21px;">To do so as quickly as <br> possible</p>
+  </div>
+
+</div>
+</div>
+
+
+</div>
+<div id="black" style="color: ghostwhite; height: 45rem; margin: auto; overflow: hidden; "class="d-flex flex-row bd-highlight mb-3 container-fluid bg-black">
+  <div id="market" class="p-2 bd-highlight">
+<h1 id="front">Growing <br> Frontier Markets</h1>
+<p id="space">Our mission is to accelerate cross border payments by <br>
+   through peer to peer transactions</p>
+   <button class="btn-grad">Download Mobile App</button>
+</div>
+<div class="p-2 bd-highlight">
+  <div id="mason" class="masonry">
+<div id="pitem" class="item-1"><img class="img img-fluid" src="https://lh3.googleusercontent.com/L6uC944LEF_HJFh14KBNVo9lSYPro1jFp36dnbio3LZQ8mgW4UJNSwUJpqUkWTcs5bSWVnitd3F3v_W5oEjUMQSbYgi7S1gl-mBTWB5xxsg1S4qBMS04YSD7NcqYmVjfpzybj9vyHni9C1scBvae4uN7kMzlpe8DqmH_8vCHRfljaDsmzvScuVU2Fb9qtkM_qCWVUS8j-JVCJpnqwqA3pjQ9wYYxV6a9FNc_2ELl8HS0Nopx8a7m6AvcohTiEAN0kaLTbvgEay_FQCFNSbqXq0s2ADn_9ebVBG8q6VsnVFRfxFYnpvEydLN4q4BtFaml1LNFUlKZ5ejMJBCGlTgyeA0B4Z9u8LB6MLH_4riIKGxEdztaixArbRpaNARPDP-DbR3ZUU1PE6pQa-VHUmEBWFtiw3pjVVQVS5c1zjqzxFMyxqw80TyMIoBfiiv40L3rTPvP2YAaW9KiYX1oz-_usVkzc9jQgQ-wcPMfVIs3_1laHw2fzS_Cxmwe1NpDWLp1OR8VrjFMtycecmF8cdkoWkwOJBjWXArnMUO_WIS7Fx7bhITu_MAJlcBrgNMg32MDifBgQ39GiPgd2XcpTzlVwXDEzxAlPTUPzDXG-DLPXIpLMdwjo4Hlkg2sfmQwZxMyLfvyv1_zInngNj0cXR9DZvVWPlVROeS8vury4qqY2888bo-wbH3yU9Zg4nJtzGM9iDJMUV6koCqJ1TFJ2AKDk9Q=w312-h238-no?authuser=0" alt="image"></div>
+<div id="pitem" class="item-2"><img class="img img-fluid" src="https://lh3.googleusercontent.com/HGHRJ-SCVQlmvvgzse52ukXiZio4n0FYyY61EbvedcqE_YXeFbtn-5XTCJyasfpTjZ3XOAMTqCgyFUMsXYD39pxGe8byNjCBp8BZuyTda_cA9ukkBR5WTgU6hfRq5kvluSnp22A-8NJw79ZMEyVW92KrkXu0J-2uzszO8aSEK4AYBuDmWUt4Da8rXIBiSaTVB6v0vwt5ci0FFkcqnCcgfmwK8L72JGLwyQMxrQKciTaYPdi7EwQLWxH3QUkZbiwx9JeRbWFRvGIJ6gsCTQMBgOOsb4rdKwSYIxIJkEDMFClL1ncLye40ZsDcd1IDuHw4bNoTavUTCArxAivPEdzBr0BPL8kOoFKv3L_NB076N5C2NJXawPfaeLUCnWuNY4sk0rp-Pxo_Co9vmlvPtnHq4ImxOjmosRf_G8JTqvSAhjVPP4AMhdC27Ow51lx6XhEDAilNjgM0ZIDHrlb-Gl_BpRUbNGgMfsKHLnRveyeWMLtlqniU5YEDVzmYDJfKo6rfbearyA9Pt2u6X9jyphSQrtTS3okRWLlllcMBqyUypuQYzwF2Igvud0x_GUjiCIHp39acSmK1T2A-pTorX_8K71mXP5zzNCsZj7WDi3GLV6uzsMDG3l3HlmVg9UdyEwRO2X-0MSfJRoY0CEqui2ypTJxsAmdI5sACNmUmYcvrJoYY9I1gL56pxiEu2eIJMKhhaHUzBipL8OVNA0Q2KUQ6dqo=s312-no?authuser=0" alt=""></div>
+<div id="pitem" class="item-3"><img class="img img-fluid" src="https://lh3.googleusercontent.com/8nXxcI6qR6r3VWTfziw1Epku6cL3t9e85jJtNE4rqzlZr7965qTbjzqjbaCsCB5xqW3JmXhbO5yMx5gIeEFcUzIKqjmJo0EGNcCQI4HebMP8XUwbvMmCVefwwivzC9MIP9gRfRT5W0yDMk6xu9AyCWRhdodISS3TfzKQFfjKDTYHgZsxhN9hgpS8a-mNXuzVDOoH9gnn4ExlMqANp6kSk9aIrh3oHlwF0u3U9FeLn5MpqQe9WhY2gbCU7YlgMFbyS781X6_l9aC8meC0dHFVcJgpmtDkcXTlD9dMPex2TzFwRQvMImYMDJNhK8QhehriiLyJEjCV2cZnSUTRdCMgye_KQPdNGu_Wf0vIG6XqGzFbdqUP2tmPr0SfDDucKeB3U_LUFlZpZuRQ_bGyhqg-XOSOuSCmg1O4HStt74xp1csJNc7ba8Sj58JM898uKd7W3fyTIDRfmZt6Kyd53J3jH7whw76zJeClAoFQzX6KTwOLAqif5zaNVVHWMiujqJP98rWW7KLMboymZ0t5kG6vUgTYssmDu-HwYhMK9W5usUXJPpFh_RHcW2h6JuNs8CETlINlKnyDpXz3g957Cq5rvzLqFny8rp3qft790XkRAwN4W6dSbk7GiT1KrCh-s2z_PMG2o_ehGq5iFN-7G5gmz44ty2BnBxlaWNaJ2l6bdUzSjuk9c_BSw9cbB-lSe-cpzgZGxgMXVM6j94_ZijMWUPM=w312-h183-no?authuser=0" alt=""></div>
+<div id="pitem" class="item-4"><img class="img img-fluid" src="https://lh3.googleusercontent.com/uwti9E-yjNHg1Z3NO5ydIXVpkrUHq3mBKi-r43wYfAL4v2LJzYVbreB8PxkAxffgCataS_GYdJTTznBt_kMym_ogAwQsPlN92la24OzNBg96XOd31JS-BzQ-X8hod5jhVk1CCFM2xxYL7NDFb-LyimCqGFFiVanuYIu1BkBrNQ_FhtyteTzo6cmreQWPPVcc-8ot9tjQHQ6sGMZ1b30-w7ekxzZIF3bOp0XaXVyrfioPFOfbKPqtRmJ7QVV4hIE1R1RXy6UgliqMQjm9bsDasmLML5HlhGUWnOXT9GWVIGI_sBx1xXmrgvJFrNdmxip7O93daP3-8vi1V0SoQVijOE56YV21GgpymSa8mjC4fj512GPnn-vrb8yBx9aMxc4tdvfrqSFvhbRZjqkgtfrwaPcRHMhAApLt3Zzp0Z3NojW6_hvilkgpzkkswPgGRvk4fVGyd7oh_E6UoNdYBPku5IUOWDs5y-1CGUNuHQhCFsvN8VlEtJAT7LXs2kJUSO7gxIKWBuDofDLKAMwHYjTMyN0JFAH3vThC6I8ZlyjTQKddl-0UtR3_ZhNPYDo3w-DpLXHlDX4iPdvApAkT9nPtgq_PDvfAl84jMW9SWwHHOHGOJGDnNS0E2VMjlIVG0tO_sZAFoYrtyd2wsInfPDxP_Xf0BDtEpCgTL8o8hI__-MYlnejNdwnHD_KafN_dyjEUg6StwbDC3EAy5ZTaqyJamw8=w312-h102-no?authuser=0" alt=""></div>
+<div id="pitem" class="item-5"><img class="img img-fluid" src="https://lh3.googleusercontent.com/lVP0MfYkn1qseTke7t6exUufRKFz-YlV3j2wLT6q7QPP8FcshUNDsR9gJkAb4lh753rGyybQcd5UPchOL_kR0cHZ36pxfS_wDG3Q_rCDUFM0VOVR7CR4YdO0GrFbtMtPYL8eDALGNy9jh-gyDWYf5D7mqNWwSKhG4MVLvu0o89KzKiotyRHkRgvprlbV4hSGcDRLonIY58o1_QCl6b3C3hlVdqUpc-B3M9f6tDN1huiwV54LR0omiW3HeT1C9zVNoYqVD4-5ciqRTkAE2vmRIE5bZT_-xLeqyuvvXJkKd4JXTwTA_8oY1OIFJviyg3fcCGoraJbkBngZzkAxyPGDqgXuBVCnPLMecHA2Vdocn-UgVREGgLgNksNsbjKqlhci39xbN7ekw8OCM35fP1GJIBghGxkCZMbU9-E8bbjLHL2Q2yQmmjvCYgUJGnSVMjrEUOON0An0bJg4WKxOoW1EAgxS8dhM0zNv3UQaHHPrNGCzi7nJHP_Kcvo-X2BfUj8Gh1jw-_hN4i-JQcfFsfS3UTxW6JJMzZ5CnUUyajoBye9KeZxWdRsXM7OFlTlzGQlOaWmuIxXgFy4nj14_cIL5WfqZay_wjTfA0dRlQWViHCQ81S-TTo3ZfJ0EcqTaSekqaWHcVKNHIoYpRC-7pkx5tRht3s-bDrE4NyI39de2hnWLkUNxyDHhQZ_zmXDJ94eCSugG9j-l7_VudVT43023LJ8=s312-no?authuser=0" alt=""></div>
+<div id="pitem" class="item-6"><img class="img img-fluid" src="https://lh3.googleusercontent.com/yU6Qobs6RVwVkyonzfW9ko8FKWs5Mk9CGWKioLftTzV1TJa8edW8DuDX97V2y7QKYZhrRcoC5_HiYCb4rIjYF_1Jy7jSbAAj_Y9rVxzqSujJCMXkG2FC1_UXAa53Xn2iHwlUeStgyWNdpr8JdGs-WydREw5Hx8_4F7lBDVfIklJMg8Pi6kT5jC0A7_5kWFz6PxR9o_qwa7Y379fO8muvmLoYmM10mZiIy7L7o5AEFejVuHkURucAItwno9dyLBIYR6q3PwpN2qVQbTcWBCiwius6gnnLQo_QEsKpg1tQashkm6mWE1JBAp06pC9Zsf7cDYar2bxzDYMc53Thb1gT5C1tXNML995F18UxMJ5WWCU2tgtqqJMxgiu4zzYzDHPLQwn8JaSjF1qRWw5rsZh19j_F0zGNnLqHKItTCC4VXRu6OKXJsisVVOXayID_6JJUqnPY-5dELWpyMSZ4NWIcGrrZdXqBsERFBi1h3zYBQz5WeayhcuZBtZuy9nWnOHs799jLLZfj2-WhZmGuCZPA7VKBRBjHGqoEVKetmceCUiOnUqzbQXxoyQaP9182uDSHJWye5ypaOA1sR7ishiXLxJTBS7FLs2farwHSN8EqsCWN_5NV01Bl3lW2g3YNJxIWpgcwAZTJxSeIOMvRq_hOLVOLQBwrVvkUiKMbel46BIklm0QYTTYXW2mNKf6hCBUBfc-wxkcZyDTfrQmhmV5_Vpg=w312-h238-no?authuser=0" alt=""></div>
+<div id="pitem" class="item-7"><img class="img img-fluid" src="https://lh3.googleusercontent.com/EzgAfSYWUUqfVpuSTyBdzGp2jMfYRJbaGLq_l2DhHVyIlfOZDlI9_JnZ1LTx7U2OKmbYe57OeQy6RKTqf-jFyFoMEZIJ2YYCOYaQoXySmuAClJTW9WFfPLnCyYBrO9EljCYKvb7QN8J056DiSxkTJchK6bUxc1kvdKNrOafigs5YiW2dfhzIMFsBHI84Yng3Kw_qTxtbBF5w-ta33QoD-kv5-Eg_zJyaZDrPMNZf99ZgIGORkdu4EwT7Yu8VZ0sr7cE3WuPlKibbCkQU0U4nDSM0FPglxUYyyu5SQ1vntlfyVeCTMrjoLq35rZjuxoVfndpSiqvS1FHSgnZ2oxCgygrq2DOJ-XSvjXnzghkTj69-ZY8B6dNBdHGGiX8xHdOTb30n1YRQKn8qFTPGpu_bYy2iOOnmFiqjP-VxDl7aDCitZ5vNWywfQE2l_d5ZPOeP99x18IPd9QPhlq4Z_cFC-yGhcnu1e-5g0-8la4qafQjkTrZhCGBCFqRocoJ0cB1LNaceQ8Vu9BjAHdXPfssLRE1NXGUA0y5eC7dF-0hrAZe49pmE_MPub5emodUC9VYMTfdZ5Rok3csyGcQpEcKLFFYcT4e3RON8acm_mLYU0taDRq2a1Y7oInJQ2763Ha4SkpeT3qYxvJxzNGDrMF_Js9HNG36n5HGS1m9tW5fPCIL7mTVV5NuPGOVqBnShR-L81SvrT_qTw9bUdithZk42IQA=w312-h100-no?authuser=0" alt=""></div>
+
+</div>
+
+</div>
+</div>
+<div class="accordion" style="margin: 50px 0;">
+<h1 id="freq">Frequently Asked Questions</h1>
+
+<div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+     Getting started with Swopp
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+      <div class="card-body">
+        We are P2P online transfer service that offers instant no-fee local and cross cross-border <br> money transfer and requests
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        How to update your BVN
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+        How do I reach the Customer Support Team?
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+        I'm not receiving my Verification Code
+      </a>
+    </div>
+    <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+        What is a Swopp Virtual Account Number
+      </a>
+    </div>
+    <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+</div>
+<div class="description">
+  <a href="#home"><img src="https://lh3.googleusercontent.com/VuZS-3Va0cCVoiNRvPdst_avcrxDud1nASDlGwzZhjrEzlvckD8glBN_wnoxp_sHPpBlWp_Fji77w9yRS3Lmd8y2onMJPrDpgX_CzBJanScE5YDwszl3x-yHbObJ7H7LGPDrIcM0VqC9GY1tf5X3nmVgwyYj_XC4rV5J82L4RVb9-3gWo6GcNXryWnzrdi_IAPlbUKzS14o-Gw9zlbR3YMbPgk38SH-BhKeBtqkxfXH4BnjdvS9l1EoIrNJSL9UwfIABl8zjaUEvlPoJr3XYyGZ_DHa_cdj2m5yjBf0XiZwCIFj0l7prLV_FUGrs1AWrl5iOaDZyeUGAMbM83GS-81ZyTbSZZM__Bx-rHL1vF86gc6C7Qk6qZNzE7Vp7XE-ypAm4QL0ScECuoEu5_ZqOfrcaaTZOcGMGxE0OhSNJivL_-5Sr1ALrOky_ksuwyMpPutS8T7-IfuD8f-cerlNGSsXf0DDk_ODxEEtpFmBSiklF6IJDc_GaxF5ww0SOpyesKikm8Pb5CEIhzywElvOizRSzoxJYtFDB0XO1CHUjS1cCsezl1odWuzvCjUs1ZRM7KYOkbEcM-l2C05oTWjxtUKOSv_bD0zLh2B_34vlVgeZlIe2CA_t3Sn_zBOd-4nGxsd06wQmfChtm-NhrZlcVDz6Q55-CG6gs4qO2s-4UghLWgh3wYvCVnPdGiaVgz8Oc8pfEXbz3ok0Ro_aUxSCNmtw=s48-no?authuser=0" alt="Swopp"><b>Swopp</b></a>
+  <p id="ppp">We are the fastest P2P way to exchange your currency and transfer it <br> to your bank account at the rate of the day. Download the app now.</p>
+  <a href=""><img  src="https://lh3.googleusercontent.com/swdGovg8jx7ZVWP0Lu3qo5tmADkk-DTLZWu4IUDUxKxocyjPKl_PsdrREXOXzR-N-p-TXNFMYD4Ln-v-qpa8Ixx5OoWkTkEuO_MlY_qbjHJJ0TEj2B5aDQUI9XE8SZa9GX01-PUCS-0Xku-F0-6VVhak12VUf4QnesutUcdM9AnpaMYp_mEHgGWYx-c6iAaPEzDYl2ljH7FiAw6nH9jyTjjOS1h1MmNUOnmCyZr0GlHHtSzeiBr2d1K3bpm378SNDahhf0eW-1P2ubV1jPDZBQlYpl3nB_TRVwgTc_kJKcM36o2qvMnXq_gMjoakDOEsFi6bDmjBI32_UXaX8lDzvdwwnKUbmoAgus4FTwL92B5-4SPUhrvL99ohM8e1t1DL0e3ph26wTxoulFdPuSTn4dvuK3JO8n2jxblJeJ-3UbxJvXg8KbRzp652NORe2AUUBYhKrzi--iZegsK88M-0amnotYqEq01vBKIxyomDFgovub3rG5oNqHUOMhP13Dgk1cxlc9fMqvaoC1xMfdfLKNNMiUytSjJSXtHN-hjJoH9fR-WUxa2RYAmI-yRHvhtL-hX-C-LQuy8kfCpy1PfqyizbdCVlRlJaPY4puSI3k2kxHUZLO2cdgUAWdl0QoIrSTPC5QDKqi9L0LktGW80i4TuCjoVkDx8_w9XOeE70tZ10lg0oqaZD_5bUhHaqD_unZrT9UuEEPA76g9I29_cJHVKa=s110-no?authuser=0" alt="facebook"></a>
+  <a href=""><img src="https://lh3.googleusercontent.com/rQZHd34GAY8zaqnN0g1K2cpCybhH2lnnvO035fqTrLzuV13mjN-LQ8BWw3GtF3C6L2ixZRAXNpw_VqLVVlJHeJluNLsA6oZdiT7MHdo-h7M76iTTS9ElTPH5er48ZmSA0BUZDbkIlMzQ8ujbVJaNQyfz3UNAyZXdgzBNDZaJKE4U6lbUeDPvJ7VT9EKdBwS0KSMCAJp3SanynmErrJOlyL9KKl6S4ahNzTI7HoNO329SxPhSgk_64Y5KqoEF1Sk7I2ONPtEJKs6qpfImUGBEqZntgOtYgpOt7vWSH8L5Go0BbjINsopIFqmIdK2OPK2cKHh7TQpicEn3xo8ORQYXGOppQs-Ys8ieCh5Vr_TqhRKqc8qJS4oGaMRAKm2l7kiUaTKZol7xCscu-UhD87mQ-L_i5VDGly4qb_-0wmtYrLAg1u91OBn3yKVw8lfn__vHWcHJefkEh4kRwBZ0XW23jtUBAn4IA2T1xW63QmOJv8QD02RftmKzj8bYnBpu3b8mA4Ii_8h9ROk8oem1QpHxq5ep-pYz-YgpQymBgoVEkdMIevkfZ08haL5s7Fkz_Vxkcg9I6kywhFarxdQsYiwveUCdlYM7Uowlzbz0IeYxsKrSauch6yQ0VaOC1qQa7clDdfRnY1qkHhZPTNnwJ8-VrWhVKZ5HqtAfuS4HjW8_eprIcvAOYo1kd3fE2_peZfdd_4y4Nzl5xfOWA0aFwvEIbNJC=w111-h110-no?authuser=0" alt="our instagram"></a>   
+  <a href=""><img src="https://lh3.googleusercontent.com/cCPuvHeFdixc53XRTRXPNhDAn5Y7mmRyL73ajcuGw-XnnEM0rycGykH6lHyu_mx6s_w2Rz4Gc2AtbdFgkLO7AE4t_QG8vzAwu164WP99JE94uz0oSja1-xp1g7HFbc5gGwGAjvFDJ6bomWK6mRrixUIzBFvZ6s0778NxI62hLWQ7oyz8_INWtBpsxTNpMBpKsUD9Ta7mX76Yz2FSJ0Tn7Bwg_WMM9MayNfrLTUoSRDEDmX3adaZy0gIVojiYo3jcCYr-lR4RyAMa0XAtxZlbNkpVQrKUcHKh7-NnAf4pUv7-4fuFgtRzK97QTJA6Oz9gsnRipjuMEGS7djAbwmGQj0mnkOLZtwELPI9nc5AZVQcCBBuiaCZsCTU5kqUSm6wo3cNtGgFjAfsUtabkaYEqqy8kP9_vwqPlalzeVvj_WFl03y8nSC9VacAKDmY6xxls0YObK53Oe8O8wPUGa5PjuH9RMT4YyR5ufKqkQSaOkbFgZvmhoi39qGQ9kv_nI3By8i61WF9ytBgfKqg3dQ_gQfm8DLeu2s1XtJLPLzqLf6CTRRXJ6Vr-Z-5bGJ5juJeTPB31qV9HjEBthKa8kT0ENxINCMCy-_uxPCaH3Yrd7Fb8OrTfgPanU-sLtceX746UbJsyzjnu1B4HFT_tTRvQhxMD1o0logDGJrPmi2C3BnSJcsocaKLYt3vH7_UdhoWnWDPwsShcy_L_Z4CG_WP2ra_s=w111-h110-no?authuser=0" alt="our twitter"></a>
+  </div>
+  <hr>
+  <footer>All rights reserved @Swopp</footer>
+
+</div>
+
+
+</body>
+</html>
