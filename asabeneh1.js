@@ -8,6 +8,10 @@ let name = "Montana";
 let age = 26;
 let isMarried = true;
 let job ;
-
+let career = null;
 console.log(age, isMarried, job, career,);
+
+
+
+
 
