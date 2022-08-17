@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+body{
+  font-family: 'Lora', sans-serif;
+  scroll-behavior: smooth;
+    }
+    nav{
+      margin-bottom: 3vw;
+    }
+
+.navbar-brand{
+    font-family: 'Rubik Dirt', cursive;
+    color: black;
+}
+#icon{
+    width: 40px;
+}
+.btnGrad{
+   color: rgba(228,73,182,1) !important;
+   background-color: whitesmoke !important;
+    font-weight: 500 !important;
+    font-family: 'Raleway', sans-serif;
+    transition: ease-in-out .6s !important;
+    outline: 1px solid rgba(228,73,182,1);
+}
+.btnGrad:hover{
+  background-color: rgba(228,73,182,1) !important;
+  color: antiquewhite !important
+}
+#container {
+  height: 100vh;
+}
+
+.desc{
+    display: flex;
+    justify-content: space-between;
+}
+
+p{ font-size: 1rem;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+h1,h2,h3,h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.arrows{
+    text-align: center;
+}
+
+footer{
+
+    text-align: center;
+    margin-bottom: 5%;
+    color: lightslategray;
+}
+.texts{
+text-align: center;
+font-weight: bold;
+}
+
+img{
+  object-fit: cover;
+  text-align: right;
+}
+
+a{font-family: 'Raleway', sans-serif;
+ text-decoration: none !important;
+  color: black !important;
+  transition: ease-in-out .5s !important;
+}
+#match{
+    margin: 0 11rem 0 11rem;
+    }
+.d-flex > svg {
+  background-color:  rgba(228,73,182,1) !important;
+}
+
+@media  (max-width: 1000px) {
+  header .bgpicture { background-image: none; 
+  backdrop-filter: blur(10px);
+text-align: center;
+}
+  
+}
+
+
+#how{
+margin: 70px 0 ;
+font-weight: 600;
+font-size: 1.1rem;
+line-height: 23px;
+}
+
+#requests{
+display: inline-block;
+width: 50%;
+}
+
+.card{
+  background-color: rgb(240, 224, 237);
+}
+
+.bgpicture{
+    background-image: url(https://lh3.googleusercontent.com/0KSnzP9Tz0r-ODoJgpgtngg3qWLnCWZaMlENnbDxvV72P9ZBWa80znM1AMrWRol1KypbFx5or1z5u8_khhofppc-P1HQ9YjIXGhW0pfF-NcaRm4qQozs-vgPTpN3vUp_kVoLDZjROyPOXGtsEufpVO1zugKt_feG3mJl3GzB7Da8ogr6rHZEwdfL3yAvBy13c67NQ8QN8sicPxIXn_UaPA3TxNs_T1cQI5o-nyLBspcNE_gNhxp98oNU1dD4m2gXsdXYNmmsPu6YyXuaNqCjuXwVdklJJxadV_vXuw-cItTRl4fyt3JkAKiZzl8-loCf9wGcoa0HxdhlSROpCeq3BM-DSVEyc3K5IQx66WM1oFCnOaCfiE5OSomPhN334HGyX6d2y6-_upYvoO93anoC6FjbF4x0HzJ_FkWPKo7lS-5L_fA8lhxu1Q21fDFV8K3INLaz7Oaahn1U8TObGF2ZJwsC1GKOUrlurAAdtEzswiRINui1-qh7c2ufl9siOh-4p0LOnNzDgb0AAWVPY7xZBuU50oMLoiLTjrpZ89XTciGQGYnn6y2mJl0EImwWO9L4mpBXvApu0mKf8R9e7_uOjikUSvn19NYWWeJcaq2uyKRlT0SPXiPKG5g2wWawyYEaf0nYJ2xbrJgDkJdqJ2p3ElbcTWFfkypho8SCKWbm9GKPRSKVMYJNb-7PfzomNXQ8Nye0S3VL_1R0W-aMQyBDM1E=w695-h568-no?authuser=0);
+    background-repeat: no-repeat;
+ 
+  background-position: 80% -60%;
+min-height: 100vh;
+}
+
+#conn{
+  background-color: #fcf1fc ;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+}
+
+a:hover{
+  color:rgb(228,73,182) !important;
+}
+
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
